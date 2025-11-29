@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 // ICONOS SEGUROS
 import { Play, Trophy, Timer, Check, X, HelpCircle, ArrowLeft, Map, Star, Book, BarChart2, Moon, Sun, Heart, Diamond, Skull, ArrowRight, Share2, Copy, Lightbulb, Volume2, Shield, Zap, Cloud, Flame, Hexagon, Grid } from 'lucide-react';
-
+// Pon esto al principio de tu archivo src/App.js
+window.onerror = function(message, source, lineno, colno, error) { 
+  document.body.innerHTML = '<pre style="color:red;white-space:pre-wrap;font-size:20px">'+message+'</pre>';
+};
 // --- SONIDOS ---
 const SFX = {
   click: 'https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3',
